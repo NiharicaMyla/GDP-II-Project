@@ -1,7 +1,7 @@
 const firebaseConfig = {
-    //   copy your firebase config informations
     apiKey: "AIzaSyDM5_rcmnXka5rf51VMIfQKth0Sfi9IHqk",
     authDomain: "gdpdemo-3d1d8.firebaseapp.com",
+    databaseURL: "https://gdpdemo-3d1d8-default-rtdb.firebaseio.com",
     projectId: "gdpdemo-3d1d8",
     storageBucket: "gdpdemo-3d1d8.appspot.com",
     messagingSenderId: "1099045880816",
