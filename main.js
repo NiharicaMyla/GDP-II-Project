@@ -1,13 +1,13 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDM5_rcmnXka5rf51VMIfQKth0Sfi9IHqk",
-    authDomain: "gdpdemo-3d1d8.firebaseapp.com",
-    databaseURL: "https://gdpdemo-3d1d8-default-rtdb.firebaseio.com",
-    projectId: "gdpdemo-3d1d8",
-    storageBucket: "gdpdemo-3d1d8.appspot.com",
-    messagingSenderId: "1099045880816",
-    appId: "1:1099045880816:web:2aac19a1c0529546ab1335",
-    measurementId: "G-NSMNNJY95Z"
-  };
+  apiKey: "AIzaSyDM5_rcmnXka5rf51VMIfQKth0Sfi9IHqk",
+  authDomain: "gdpdemo-3d1d8.firebaseapp.com",
+  databaseURL: "https://gdpdemo-3d1d8-default-rtdb.firebaseio.com",
+  projectId: "gdpdemo-3d1d8",
+  storageBucket: "gdpdemo-3d1d8.appspot.com",
+  messagingSenderId: "1099045880816",
+  appId: "1:1099045880816:web:2aac19a1c0529546ab1335",
+  measurementId: "G-NSMNNJY95Z"
+};
   
   // initialize firebase
   firebase.initializeApp(firebaseConfig);

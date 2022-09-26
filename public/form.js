@@ -21,14 +21,14 @@ import {
 } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDghAAvMSGvON4Lmd-jop0VyjOiAC5t8lM",
-  authDomain: "smart-mobility-ios.firebaseapp.com",
-  databaseURL: "https://smart-mobility-ios-default-rtdb.firebaseio.com",
-  projectId: "smart-mobility-ios",
-  storageBucket: "smart-mobility-ios.appspot.com",
-  messagingSenderId: "727144855934",
-  appId: "1:727144855934:web:2ca21a0d262114a85ddb2f",
-  measurementId: "G-5SNWQ6NS22"
+  apiKey: "AIzaSyDM5_rcmnXka5rf51VMIfQKth0Sfi9IHqk",
+  authDomain: "gdpdemo-3d1d8.firebaseapp.com",
+  databaseURL: "https://gdpdemo-3d1d8-default-rtdb.firebaseio.com",
+  projectId: "gdpdemo-3d1d8",
+  storageBucket: "gdpdemo-3d1d8.appspot.com",
+  messagingSenderId: "1099045880816",
+  appId: "1:1099045880816:web:2aac19a1c0529546ab1335",
+  measurementId: "G-NSMNNJY95Z"
 };
 
 // Login using email/password
