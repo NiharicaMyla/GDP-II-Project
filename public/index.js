@@ -43,10 +43,44 @@ const firebaseConfig = {
     measurementId: "G-NSMNNJY95Z"
   };
 
+  const nodemailer = require('nodemailer');
+
+  var transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+        user: 'neehacullens@gmail.com',
+        pass: 'Niha@123'
+    }
+});
+
+exports.sendEmail = functions.firestore
+    .document('orders/{orderId}')
+    .onCreate((snap, context) => {
+
+});
+
+const mailOptions = {
+    from: `neehacullens@gmail.com`,
+    to: snap.data().email,
+    subject: 'contact form message',
+    html: `<h1>Successfully Registered!!</h1>
+     <p> <b>Email: </b>${snap.data().email} </p>`
+};
+
+return transporter.sendMail(mailOptions, (error, data) => {
+    if (error) {
+        console.log(error)
+        return
+    }
+    console.log("Sent!")
+});
 // // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
-
+const admin = require("firebase-admin")
+admin.initializeApp()
 
 // const app = initializeApp(firebaseConfig);
     const auth = getAuth();
