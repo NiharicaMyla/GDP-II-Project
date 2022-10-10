@@ -109,29 +109,28 @@
           var username = document.getElementById('username').value;
           var email = document.getElementById('email').value;
           var password = document.getElementById('password').value;
+          var fname = document.getElementById('fname').value;
       
           set(ref(database, 'admin-users/' + username), {
       
            username: username,
            email: email,
-           password : password
+           password : password,
+           fname : fname
       
            });
       
           alert('saved');
           });
-      
+
+   
+
           // get data
-          getData.addEventListener('click',(e) => {
-            var username = document.getElementById('username').value;
-      
-            const starCountRef = ref(database, 'admin-users/' + username);
-            onValue(starCountRef, (snapshot) => {
-            const data = snapshot.val(); // data = all data on firebse
-            
-            document.getElementById('email').value = data.email;
-            })
-          });
+
+          firebase.database().ref('data').on('value',(snapshot)=>{
+    console.log(snapshot.val());
+  });
+          
       
           // update data
           updateData.addEventListener('click',(e) => {
